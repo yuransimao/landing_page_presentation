@@ -158,3 +158,54 @@ section{
      line-height: 30px;
      margin-bottom: 3rem;
 }
+
+.contact{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.contact-text {
+    margin-bottom: 2rem;
+}
+.contact-text h3{
+    font-size: var(--font-h2);
+    margin-bottom: 3rem;
+}
+.contact-text p{
+    color: var(--secondary-color);
+    font-size: var(--font-p);
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.contact-icons{
+    display: flex;
+    gap:4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icons div{
+    font-size: var(--font-p);
+}
+
+.contact-icons div i{
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    background: var(--other-color);
+    padding: 1.5rem;
+    border-radius: 100%;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+.contact-icons div i:hover{
+    background: var(--main-color);
+    box-shadow: #ff9f0f 0px 1px 25px;
+}
+
+.contact-icons div h4{
+    
+    font-size: var(--font-p);
+}
