@@ -270,6 +270,9 @@ section{
     .navlist.open{
         top:100%;
     }
+    #menu-icon{
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 1045px){
