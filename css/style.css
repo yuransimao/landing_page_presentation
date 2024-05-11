@@ -80,3 +80,54 @@ header{
     font-size: 25px;
     color:var(--main-color);
 } 
+
+section{
+    padding: 70px 14% 60px;
+}
+
+.home{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:2rem;
+}
+
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+
+.home-text h1{
+    font-size: var(--font-h2);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+.home-text h1 > span{
+    color: var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--other-color);
+    color: var(--main-color);
+    font-size: var(--font-p);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all .50s ease;
+}
+.btn i {
+    vertical-align: middle;
+    margin-left: 9px;
+    font-size: 22px;
+}
+.btn:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: #ff9f0f 0px 1px 25px;
+}
