@@ -35,9 +35,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:30px 10%;
+    padding:20px 10%;
     transition: all .50s ease;
     z-index: 1000;
+    background: var(--other-color);
 }
 
 .logo{
