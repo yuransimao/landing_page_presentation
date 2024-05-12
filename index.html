@@ -15,9 +15,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+       
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -26,7 +28,7 @@
     <div class="Wrapper">
 
         <header>
-            <a href="#" class="logo"><i class='bx bxs-home'></i>Apnotec</a>
+            <a href="#" class="logo"><img src="./Public/assets/Apnotec.jpeg" alt="apnotec"></a>
             <ul class="navlist">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">Sobre Nos</a></li>
@@ -40,21 +42,21 @@
 
 
         <section class="home" id="home">
-            <div class="home-text">
-                <h1>Carta de <span>Proposta</span> <br> para seu Restaurante </h1>
+            <div class="home-text " data-aos="fade-right">
+                <h1>Carta de <span>Proposta</span> <br class="break"> para seu Restaurante </h1>
                 
                 <p>A proposta de nossa empresa, especializada em soluções digitais para restaurantes, é modernizar as operações dos estabelecimentos através da implementação de um menu digital interativo. Este sistema permitirá aos clientes fazer pedidos e reservar mesas diretamente de seus smartphones, melhorando a experiência do cliente e otimizando a eficiência interna.</p>
 
-                <a href="#" class="btn">Explore <i class='bx bx-right-arrow-alt'></i></a>
+                <div class="btn-container"><a href="#benefits" class="btn">Explore <i class='bx bx-right-arrow-alt'></i></a></div>
             </div>
 
-            <div class="home-img">
+            <div class="home-img"  data-aos="fade-left">
                 <img src="./Public/assets/hero.png" alt="hero">
             </div>
         </section>
 
 
-        <section class="benefits">
+        <section class="benefits fade-up" data-aos="fade-up" id="benefits">
             <div class="benefits-container">
                 <div class="benefits-container-text">
                     <span><i class='bx bxs-user-check' ></i></span>
@@ -88,16 +90,19 @@
 
         <!--About-->
         <section class="about" id="about">
-            <div class="about-img">
+            <div class="about-img" data-aos="zoom-right ">
                 <img src="./Public//assets/about.png" alt="about">
             </div>
 
-            <div class="about-text">
+            <div class="about-text" data-aos="zoom-left ">
                 <h5>Por que nós escolher?</h5>
                 <h2>Escolha Inteligente</h2>
                 <p>Opte por nossa solução e garanta um serviço mais eficiente e uma experiência de usuário aprimorada. Modernize seu restaurante com tecnologia de ponta.<br> </p>
 
+               <div class="btn-container">
+                <a href="#benefits" class="btn">Explore <i class='bx bx-right-arrow-alt'></i></a></div>
                 <div class="about-choose">
+                    
                     <div class="choose-container">
                         <span><i class='bx bx-receipt'></i></span>
                         <h6>Pedidos Online</h6>
@@ -115,11 +120,34 @@
                         <h6>Suporte Multiplataforma</h6>
                     </div>
                 </div>
-                <a href="#how" class="btn">Como vamos fazer? <i class='bx bx-right-arrow-alt'></i></a>
+               
             </div>
         </section>
 
-        
+        <section class="how" id="how">
+            <div class="how-video">
+                
+            </div>
+            <div class="how-text">
+
+                <span><img src="./Public/assets/ballon.png" alt=""></span>
+                <h2> Implementação</h2>
+                <p>Nossa equipe técnica será responsável pela implementação completa do sistema, garantindo uma transição suave e treinamento para a equipe. O processo incluirá:</p>
+
+                <ul>
+                    <li><span>1</span><h3> Configuração inicial</h3></li>
+                    <li>
+                        <span>2</span><h3>Personalização do menu digital conforme as necessidades do restaurante.</h3>
+                    </li>
+                    <li>
+                        <span>3</span><h3>Treinamento do pessoal para gerenciamento do sistema e atendimento ao cliente.</h3>
+                    </li>
+                </ul>
+            </div>
+
+            
+
+        </section>
 
         <section id="portfolio">
                 <div class="portfolio-text">
@@ -196,7 +224,7 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

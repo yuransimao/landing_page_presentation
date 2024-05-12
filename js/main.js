@@ -17,3 +17,4 @@ window.onscroll = () => {
     Navlist.classList.remove("open")
 }
 
+AOS.init();
