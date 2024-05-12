@@ -16,7 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -25,10 +26,10 @@
     <div class="Wrapper">
 
         <header>
-            <a href="#" class="logo"><i class='bx bxs-home' ></i>Apnotec</a>
+            <a href="#" class="logo"><i class='bx bxs-home'></i>Apnotec</a>
             <ul class="navlist">
                 <li><a href="#" class="active">Home</a></li>
-                <li ><a href="#about">Sobre Nos</a></li>
+                <li><a href="#about">Sobre Nos</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
             </ul>
 
@@ -39,49 +40,123 @@
 
 
         <section class="home" id="home">
-           <div class="home-text">
-            <h1>Carta de <span>Proposta</span> <br> para seu Restaurante </h1>
-            <a href="#" class="btn">Explore <i class='bx bx-right-arrow-alt'></i></a>
-            
-           </div> 
+            <div class="home-text">
+                <h1>Carta de <span>Proposta</span> <br> para seu Restaurante </h1>
+                
+                <p>A proposta de nossa empresa, especializada em soluções digitais para restaurantes, é modernizar as operações dos estabelecimentos através da implementação de um menu digital interativo. Este sistema permitirá aos clientes fazer pedidos e reservar mesas diretamente de seus smartphones, melhorando a experiência do cliente e otimizando a eficiência interna.</p>
 
-           <div class="home-img">
+                <a href="#" class="btn">Explore <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+
+            <div class="home-img">
                 <img src="./Public/assets/hero.png" alt="hero">
-           </div>
+            </div>
         </section>
 
-            <!--About-->
-        <section class="about" id="about">
-           <div class="about-img">
-            <img src="./Public//assets/about.png" alt="about">
-           </div> 
 
-           <div class="about-text">
-            <h2>Quem somos nós?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt dolores tempora odit amet libero exercitationem, quos corrupti quae, excepturi ducimus necessitatibus a nam nobis reprehenderit est quod accusantium placeat.<br> <br> </p>
-            <a href="#" class="btn">Explore <i class='bx bx-right-arrow-alt'></i></a>
-           </div>
+        <section class="benefits">
+            <div class="benefits-container">
+                <div class="benefits-container-text">
+                    <span><i class='bx bxs-user-check' ></i></span>
+                    <h3>Experiência Melhorada</h3>
+                    <p>Pedidos e Reservas Rápidos e Sem Contato</p>
+                </div>
+            </div>
+
+            <div class="benefits-container">
+                <div class="benefits-container-text">
+                    <span><i class='bx bxs-cog' ></i></span>
+                    <h3>Otimização operacional</h3>
+                    <p>Redução de erros nos pedidos e otimização do atendimento</p>
+                </div>
+            </div>
+            <div class="benefits-container">
+                <div class="benefits-container-text">
+                    <span><i class='bx bx-bar-chart-alt'></i></i></span>
+                    <h3>Insights de Clientes</h3>
+                    <p>Coleta de dados para marketing personalizado</p>
+                </div>
+            </div>
+            <div class="benefits-container">
+                <div class="benefits-container-text">
+                    <span><i class='bx bx-sync' ></i></span>
+                    <h3>Adaptação moderna</h3>
+                    <p>Atende às demandas por serviços sem contato</p>
+                </div>
+            </div>
+        </section>
+
+        <!--About-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="./Public//assets/about.png" alt="about">
+            </div>
+
+            <div class="about-text">
+                <h5>Por que nós escolher?</h5>
+                <h2>Escolha Inteligente</h2>
+                <p>Opte por nossa solução e garanta um serviço mais eficiente e uma experiência de usuário aprimorada. Modernize seu restaurante com tecnologia de ponta.<br> </p>
+
+                <div class="about-choose">
+                    <div class="choose-container">
+                        <span><i class='bx bx-receipt'></i></span>
+                        <h6>Pedidos Online</h6>
+                    </div>
+                    <div class="choose-container">
+                        <span><i class='bx bx-restaurant' ></i></span>
+                        <h6>Reserva de Mesas</h6>
+                    </div>
+                    <div class="choose-container">
+                        <span><i class='bx bxs-palette' ></i></span>
+                        <h6>Interface Personalizável</h6>
+                    </div>
+                    <div class="choose-container">
+                        <span><i class='bx bx-devices'></i></span>
+                        <h6>Suporte Multiplataforma</h6>
+                    </div>
+                </div>
+                <a href="#how" class="btn">Como vamos fazer? <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </section>
+
+
+        <section id="how">
+
+        </section>
+
+        <!--Contacto-->
+        <section class="contact">
+            <div class="contact-text">
+                <h3>Contacto Nós</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea, culpa alias quisquam dignissimos aut
+                    ducimus iste assumenda quaerat autem nam quas odio a nulla earum voluptatibus molestiae voluptatem?
+                    Aut.</p>
+            </div>
+
+            <div class="contact-icons">
+
+                <div><i class='bx bxl-facebook-circle'></i>
+                    <h4>Apnotec</h4>
+                </div>
+                <div><i class='bx bxl-instagram-alt'></i>
+                    <h4>Apnotec</h4>
+                </div>
+                <div><i class='bx bxl-linkedin'></i>
+                    <h4>Apnotec</h4>
+                </div>
+                <div><i class='bx bxl-google'></i>
+                    <h4>apnotec@gmail.com</h4>
+                </div>
+                <div><i class='bx bxs-phone-call'></i>
+                    <h4>924622482</h4>
+                </div>
+
+            </div>
         </section>
 
     </div>
 
-   <!--Contacto-->
-    <section class="contact">
-        <div class="contact-text">
-            <h3>Contacto Nós</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea, culpa alias quisquam dignissimos aut ducimus iste assumenda quaerat autem nam quas odio a nulla earum voluptatibus molestiae voluptatem? Aut.</p>
-        </div>
 
-        <div class="contact-icons">
-
-            <div><i class='bx bxl-facebook-circle'></i> <h4>Apnotec</h4></div>
-            <div><i class='bx bxl-instagram-alt' ></i> <h4>Apnotec</h4></div>
-            <div><i class='bx bxl-linkedin' ></i> <h4>Apnotec</h4></div>
-            <div><i class='bx bxl-google' ></i><h4>apnotec@gmail.com</h4></div>
-            <div><i class='bx bxs-phone-call' ></i> <h4>924622482</h4></div>
-
-        </div>
-    </section>
 
 
     <script src="./js/main.js"></script>

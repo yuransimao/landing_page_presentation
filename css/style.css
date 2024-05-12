@@ -19,6 +19,7 @@
     --big-font:4.5rem;
     --font-h2:2.6rem;
     --font-p:1rem;
+    --font-small:0.900rem;
 }
 body{
     font-size:62.5% ;
@@ -110,12 +111,19 @@ section{
     font-size: var(--font-h2);
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 .home-text h1 > span{
     color: var(--main-color);
 }
 
+.home-text p{
+    font-size: 0.90rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
 .btn{
     display: inline-block;
     padding: 15px 35px;
@@ -138,32 +146,140 @@ section{
     box-shadow: #ff9f0f 0px 1px 25px;
 }
 
+
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+    margin: 6rem 0;
+}
+
+.benefits-container{
+    background: var(--other-color);
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    transition: all .50s ease;
+}
+
+.benefits-container:hover{
+    background: var(--other-color);
+}
+
+.benefits-container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.benefits-container-text h3{
+    font-size: var(--font-p);
+}
+.benefits-container-text p{
+    font-size: 0.800rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
+.benefits-container-text span i{
+    font-size: 35px;
+    color: var(--main-color);
+}
+.benefits-container:hover + .benefits-container-text span i{
+    color: var(--text-color);
+}
+
 .about{
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap:4rem;
+
+    background: var(--other-color);
 }
 
 .about-img img{
     width: 100%;
     height: auto;
 }
-
+.about-text h5{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--main-color);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
 .about-text h2{
     font-size: var(--font-h2);
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .about-text p{
-     color: var(--secondary-color);
-     font-size: var(--font-p);
+     
+     font-size: var(--font-small);
      line-height: 30px;
-     margin-bottom: 3rem;
+     margin-bottom: 2rem;
+     text-align: justify;
+     font-weight: 300;
 }
 
+
+.about-text .btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--bg-color);
+    color: var(--main-color);
+    font-size: var(--font-p);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.8rem;
+    transition: all .50s ease;
+}
+.about-text .btn i {
+    vertical-align: middle;
+    margin-left: 9px;
+    font-size: 22px;
+}
+.about-text .btn:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: #ff9f0f 0px 1px 25px;
+}
+
+.about-choose{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.choose-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:1rem;
+    background: var(--text-color);
+    padding: 1rem;
+    border-radius: .3rem;
+    color: var(--bg-color);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.choose-container h6{
+    font-size: var(--font-small);
+    color: var(--other-color);
+}
+
+.choose-container span i{
+    font-size: 30px;
+    color: var(--main-color);
+}
 .contact{
     text-align: center;
     display: flex;
