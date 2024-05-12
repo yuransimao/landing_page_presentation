@@ -280,6 +280,48 @@ section{
     font-size: 30px;
     color: var(--main-color);
 }
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.portfolio-container .content-container img{
+    width: 100%;
+    height: auto;
+}
+.portfolio-text{
+    text-align: center;
+    margin: 4rem 0;
+}
+.portfolio-text h2{
+    font-size: var(--font-h2);
+    margin-bottom: 1rem;
+
+}
+.portfolio-text p{
+    font-size: var(--font-p);
+}
+.content-container{
+    transition: all 0.5s ease;
+    padding: 1rem;
+}
+
+.content-container:hover{
+    background: var(--other-color);
+    filter: brightness(2rem);
+}
+
+.content-container a{
+    text-align: center;
+    color: var(--text-color);
+}
+
+.content-container a h2{
+    font-size: var(--font-p);
+    padding-top: 1rem;
+}
 .contact{
     text-align: center;
     display: flex;
